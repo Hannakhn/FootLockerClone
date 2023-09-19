@@ -7,20 +7,7 @@ function SearchBar() {
   return (
     <>
       <input
-        className="searchInput"
-        name="query"
-        aria-haspopup="true"
-        aria-expanded="false"
-        aria-controls="typeahead"
-        aria-label="Search"
-        aria-autocomplete="list"
-        id="HeaderSearch_search_query"
-        role="combobox"
-        type="search"
-        maxlength="40"
-        placeholder="Search"
-        autocomplete="off"
-        value=""
+    placeholder="Search"
       ></input>
       <Button>
         <Search fas icon="search" color="white" />

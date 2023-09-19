@@ -17,8 +17,8 @@ import {
 function DropdownPortion() {
   return (
     <div>
-      <Nav className="Selections">
-        <NavItem>
+      <Nav fixed="top" expand="md" style={{ Color: "white" }} className="inactive">
+        <NavItem >
           <NavLink active href="#">
             Find a Store
           </NavLink>
@@ -28,11 +28,6 @@ function DropdownPortion() {
         </NavItem>
         <NavItem>
           <NavLink href="#">Customer Service</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink disabled href="#">
-            Disabled Link
-          </NavLink>
         </NavItem>
       </Nav>
     </div>

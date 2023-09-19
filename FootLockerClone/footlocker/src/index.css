@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.inactive {
+    color: #f5f2f2;
+}
+
+.inactive:hover {
+    color: #fed136;
+}
+
+.collagePhoto{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+}
+
+.homeButtonPhoto {
+  margin: 0;
+  position: absolute;
+
+}
+
+/* .homeButtonPhotoHeading{
+  position: relative;
+} */
