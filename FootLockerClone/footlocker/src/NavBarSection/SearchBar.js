@@ -6,7 +6,7 @@ import { Search } from "react-bootstrap-icons";
 function SearchBar() {
   return (
     <>
-      <input
+      <input fill
     placeholder="Search"
       ></input>
       <Button>

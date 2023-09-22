@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Bungee&family=Londrina+Solid:wght@300&family=Oswald:wght@400;500&family=Sigmar+One&family=Trochut&family=Viga&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -22,6 +24,7 @@ code {
     color: #fed136;
 }
 
+
 .collagePhoto{
     max-width: 100%;
     height: auto;
@@ -32,23 +35,57 @@ code {
 }
 
 .homeButtonPhoto {
-  margin: 0;
-  position: absolute;
+margin: 0;
+    position: relative;
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    min-height: 2.75rem;
+    padding: 0.875rem 1.25rem;
+    text-transform: uppercase;
+   background-color: white !important;
+   color:rgb(10, 10, 10) !important;
+    padding: 15px;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin-top: 20%;
 }
 
 .dropDownMenu{
-  color:white;
-  background-color: black;
+  color:white !important;
+  background-color: black !important;
   font-size: 20px;
 justify-content: end;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+font-family: 'Oswald', sans-serif;
+padding-bottom: 10px;
+padding-top: 10px;
 }
 
 
 .homeButtonPhotoHeading{
-        display: "flex";
-        align-items: "center";
-        justify-content: "center";
+font-family: 'Oswald', sans-serif;
         height: "100%";
+        position: absolute;
+        text-align:center;
+}
+
+.secondNav{
+  font-size: 30px;
+  background-color: black !important;
+  padding: 15px;
+  color: white !important;
+  font-family: 'Oswald', sans-serif;
 }
