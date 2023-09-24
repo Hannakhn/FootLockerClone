@@ -8,69 +8,30 @@ import {
   CardDeck,
   CardSubtitle,
   CardBody,
-  CardGroup
+  CardGroup,
+  Col
 } from "reactstrap";
 
 const CardNavigation = (props) => {
   return (
-    <CardGroup>
-      <Card>
-        <CardImg
-          alt="Card image cap"
-          src="img/MensPhoto.jpg"
-          top
-          width="50%"
-        />
-        <CardBody>
-          <CardTitle tag="h5">Card title</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
-            Card subtitle
-          </CardSubtitle>
-          <CardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </CardText>
-          <Button>Button</Button>
-        </CardBody>
+    <CardGroup className="selectionCards">
+      <Card hoverable>
+        <CardImg src="img/MensPhoto.jpg" />
       </Card>
       <Card>
-        <CardImg
-          alt="Card image cap"
-          src="https://picsum.photos/318/180"
-          top
-          width="100%"
-        />
-        <CardBody>
-          <CardTitle tag="h5">Card title</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
-            Card subtitle
-          </CardSubtitle>
-          <CardText>
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </CardText>
-          <Button>Button</Button>
-        </CardBody>
+        <CardImg src="img/WomensPhoto.jpg" />
       </Card>
       <Card>
-        <CardImg
-          alt="Card image cap"
-          src="https://picsum.photos/318/180"
-          top
-          width="100%"
-        />
-        <CardBody>
-          <CardTitle tag="h5">Card title</CardTitle>
-          <CardSubtitle className="mb-2 text-muted" tag="h6">
-            Card subtitle
-          </CardSubtitle>
-          <CardText>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </CardText>
-          <Button>Button</Button>
-        </CardBody>
+        <CardImg src="img/KidsPhoto.jpg" />
+      </Card>
+      <Card>
+        <CardImg src="img/ClothingPhoto.jpg" />
+      </Card>
+      <Card>
+        <CardImg src="img/AccessoriesPhoto.jpg" />
+      </Card>
+      <Card>
+        <CardImg src="img/SalePhoto.jpg" />
       </Card>
     </CardGroup>
   );
