@@ -1,41 +1,79 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import {
-  Modal,
-  ModalBody,
-  ModalHeader,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarBrand,
-  Navbar,
-} from "reactstrap";
-import Divider from "@mui/material/Divider";
-import SearchBar from "./SearchBar";
-import DropdownPortion from "./dropDownMenu";
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBCollapse,
+} from "mdb-react-ui-kit";
 
+export default function NavbarTop() {
+  const [showBasic, setShowBasic] = useState(false);
 
-function NavbarTop() {
   return (
-    <div>
-      <DropdownPortion />
-        <Navbar className="my-2" expand="md">
-
-          <NavbarBrand href="/">
-            <img
-              className="footlockerImageLogo"
-              alt="logo"
-              src="img/logo.jpg"
-              style={{
-                height: 80,
-                width: 230,
-              }}
+    <header>
+      <MDBNavbar expand="lg" light>
+        <MDBContainer fluid className="entireNavbar">
+          <MDBNavbarBrand href="#">
+            <img src="img/logo.jpg" height="90" alt="" loading="lazy" />
+          </MDBNavbarBrand>
+          <form className="d-flex input-group w-auto">
+            <input
+              type="search"
+              className="form-control"
+              placeholder="Type query"
+              aria-label="Search"
             />
-            <SearchBar />
-          </NavbarBrand>
+            <MDBBtn color="primary">Search</MDBBtn>
+          </form>
 
-        </Navbar>
-    </div>
+          <MDBNavbarToggler
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onClick={() => setShowBasic(!showBasic)}
+          >
+            <MDBIcon icon="bars" fas />
+          </MDBNavbarToggler>
+
+          <MDBCollapse navbar show={showBasic}>
+            <MDBNavbarNav className="navBarItems">
+              <MDBNavbarItem>
+                <MDBDropdown>
+                  <MDBDropdownToggle
+                    tag="a"
+                    className="nav-link center"
+                    role="button"
+                    active
+                    aria-current="page"
+                  >
+                    Find a Store
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBBtn className="navLocationBtn">Find a Store</MDBBtn>
+                    <MDBDropdownItem link>Set Location</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#">Welcome, Sign In</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink href="#">Customer Service</MDBNavbarLink>
+              </MDBNavbarItem>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBContainer>
+      </MDBNavbar>
+    </header>
   );
 }
-
-export default NavbarTop;

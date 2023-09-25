@@ -24,12 +24,6 @@ code {
     color: #fed136;
 }
 
-.searchBarArea{
-  width: 100%;
-  position: center;
-  display: flex;
-}
-
 
 .collagePhoto{
     max-width: 100%;
@@ -56,7 +50,7 @@ margin: 0;
     white-space: nowrap;
     cursor: pointer;
     transition: box-shadow 0.25s;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif !important;
     letter-spacing: 0.5px;
     line-height: 1;
     min-height: 2.75rem;
@@ -67,8 +61,56 @@ margin: 0;
     padding: 15px;
     font-size: 30px !important;
     font-weight: bold !important;
-    margin-top: 20%;
+    margin-top: 0%;
 }
+
+
+
+.homeButtonPhotoHeading{
+  margin: 0;
+  position: relative;
+  display: fixed inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  min-height: 2.75rem;
+  padding: 0.875rem 1.25rem;
+  text-transform: uppercase;
+  margin-top: 13%;
+  color:rgb(250, 248, 248) !important;
+  padding: 15px;
+  font-size: 65px !important;
+  font-weight: bold !important;
+
+}
+
+.entireNavbar{
+  background-color: white;
+  color: white !important;
+}
+
+.navLocationBtn{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navBarItems{
+    color:white !important;
+  font-size: 25px;
+font-family: 'Oswald', sans-serif;
+margin-right: auto;
+margin-bottom: 2;
+margin-left: large;
+justify-content:end;
+}
+
 
 .dropDownMenu{
   color:white !important;
@@ -80,28 +122,16 @@ padding-bottom: 10px;
 padding-top: 10px;
 }
 
-
-.homeButtonPhotoHeading{
-font-family: 'Oswald', sans-serif;
-        height: "100%";
-        position: absolute;
-        justify-content: center !important;
-        text-align:center !important;
-        color: white !important;
-}
-
 .secondNav{
-  font-size: 30px;
-  background-color: black !important;
-  padding: 15px;
-  color: white !important;
+height: 25%;
   font-family: 'Oswald', sans-serif;
+
 }
 /* Cards Section */
 
 .selectionCards{
     text-align: center;
-  margin-top: 13%;
+  margin-top: 16%;
   margin-bottom: 20px;
   font-family: 'Oswald', sans-serif;
 padding-left: 25px;

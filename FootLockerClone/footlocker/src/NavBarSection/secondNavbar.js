@@ -1,37 +1,55 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import {
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarBrand,
-  Navbar,
-} from "reactstrap";
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBCollapse,
+  MDBIcon
+} from "mdb-react-ui-kit";
 
-function SecondNavbar() {
+export default function SecondNavbar() {
+  const [showNav, setShowNav] = useState(false);
+
   return (
-    <div>
-      <Nav expand="md" className="secondNav">
-        <NavItem>
-          <NavLink href="#">NEW ARRIVALS</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">MEN'S</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">KIDS'</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">CLOTHING</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">RELEASES</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">BRANDS</NavLink>
-        </NavItem>
-      </Nav>
-    </div>
+    <MDBNavbar expand="lg" className='secondNav'>
+      <MDBContainer fluid>
+        <MDBNavbarToggler
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onClick={() => setShowNav(!showNav)}
+        >
+          <MDBIcon icon="bars" fas />
+        </MDBNavbarToggler>
+        <MDBCollapse navbar show={showNav}>
+          <MDBNavbarNav>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#">
+                MEN'S
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#">WOMEN'S</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#">KIDS'</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#">CLOTHING</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#">RELEASES</MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href="#">BRANDS</MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
   );
 }
-
-export default SecondNavbar;
