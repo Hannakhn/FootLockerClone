@@ -30,10 +30,12 @@ export default function NavbarTop() {
             <input
               type="search"
               className="form-control"
-              placeholder="Type query"
+              placeholder="Search"
               aria-label="Search"
             />
-            <MDBBtn color="primary">Search</MDBBtn>
+            <MDBBtn color='dark'>
+              <MDBIcon fas icon="search" />
+            </MDBBtn>
           </form>
 
           <MDBNavbarToggler

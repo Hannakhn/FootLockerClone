@@ -1,23 +1,19 @@
 import React from 'react';
-import { Button } from "reactstrap";
+import { Button, Container } from "reactstrap";
 
 function PhotoSection() {
   return (
-    <div>
+    <Container fluid className='collagePhotoContainer'>
       <div>
-        <img
-          className="collagePhoto"
-          alt="logo"
-          src="img/FootLockerCollage.jpg"
-        />
+        <img className="collagePhoto" alt="" src="img/FootLockerCollage.jpg" />
       </div>
       <div>
-        ` <h1 className="homeButtonPhotoHeading">Everyone loves UGG</h1>`
+        <h1 className="homeButtonPhotoHeading">Everyone loves UGG</h1>`
       </div>
       <div>
         <Button className="homeButtonPhoto">Shop Ugg</Button>
       </div>
-    </div>
+    </Container>
   );
 }
 

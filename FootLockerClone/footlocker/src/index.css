@@ -11,8 +11,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+font-family: 'Oswald', sans-serif;
 }
 
 
@@ -26,67 +25,46 @@ code {
 
 
 .collagePhoto{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    width: 100%;
-    position: absolute;
+  max-width: 100%;
+object-fit: fill;
+margin: auto;
+width: 100%;
+height: auto;
+
+
+}
+
+.collagePhotoContainer{
+  position: relative;
+  text-align: center;
 }
 
 .homeButtonPhoto {
-margin: 0;
-    position: relative;
-    display: inline-block;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 2px;
-    vertical-align: middle;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: box-shadow 0.25s;
-    font-family: 'Oswald', sans-serif !important;
-    letter-spacing: 0.5px;
-    line-height: 1;
-    min-height: 2.75rem;
-    padding: 0.875rem 1.25rem;
-    text-transform: uppercase;
-   background-color: white !important;
-   color:rgb(10, 10, 10) !important;
-    padding: 15px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     font-size: 30px !important;
     font-weight: bold !important;
-    margin-top: 0%;
+font-family: 'Oswald', sans-serif !important;
+text-transform: uppercase;
+background-color: white !important;
+color: black !important;
+    
 }
 
 
 
 .homeButtonPhotoHeading{
-  margin: 0;
-  position: relative;
-  display: fixed inline-block;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.5px;
-  line-height: 1;
-  min-height: 2.75rem;
-  padding: 0.875rem 1.25rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Oswald', sans-serif !important;
   text-transform: uppercase;
-  margin-top: 13%;
-  color:rgb(250, 248, 248) !important;
-  padding: 15px;
   font-size: 65px !important;
-  font-weight: bold !important;
+  color: white;
+
 
 }
 
@@ -123,8 +101,13 @@ padding-top: 10px;
 }
 
 .secondNav{
-height: 25%;
-  font-family: 'Oswald', sans-serif;
+    color:white !important;
+  font-size: 25px;
+font-family: 'Oswald', sans-serif;
+margin-right: auto;
+margin-bottom: 2;
+margin-left: large;
+justify-content:start;
 
 }
 /* Cards Section */
@@ -145,8 +128,17 @@ padding-right:25px;
 border: white;
 }
 
+.bottomPhotos{
+display: flex;
+}
+
 /* Footer */
 .text-center-text-lg-start-text-muted{
 background-color: black !important;
   font-family: 'Oswald', sans-serif;
+}
+
+#cardBtn{
+  justify-content: center;
+margin-bottom: 50%;
 }

@@ -5,6 +5,7 @@ import PhotoSection from './Collage Second Portion/PhotoSection';
 import SecondNavbar from './NavBarSection/secondNavbar';
 import CardNavigation from './Cards Navigation Section/cardNavigation';
 import Footer from './Footer/Footer';
+import BottomPhotoLinks from './Cards Navigation Section/bottomPhotoLinks';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <NavbarTop />
       <SecondNavbar />
       <PhotoSection />
-        <CardNavigation />
+        <BottomPhotoLinks />
         <Footer />
     </div>
   );
