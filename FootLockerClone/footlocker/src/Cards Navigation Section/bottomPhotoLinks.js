@@ -9,7 +9,13 @@ export default function BottomPhotoLinks() {
           <img src="img/MensPhoto.jpg" className="img-fluid rounded" alt="" />
         </MDBCol>
         <MDBCol lg="3" md="12" className="mb-4">
-          <img src="img/WomensPhoto.jpg" className="img-fluid rounded" alt="" />
+          <a>
+            <img
+              src="img/WomensPhoto.jpg"
+              className="img-fluid rounded"
+              alt=""
+            />
+          </a>
         </MDBCol>
         <MDBCol lg="3" md="12" className="mb-4">
           <img src="img/KidsPhoto.jpg" className="img-fluid rounded" alt="" />
@@ -30,9 +36,6 @@ export default function BottomPhotoLinks() {
         </MDBCol>
         <MDBCol lg="3" md="12" className="mb-4">
           <img src="img/SalePhoto.jpg" className="img-fluid rounded" alt="" />
-        </MDBCol>
-        <MDBCol lg="3" md="12" className="mb-4">
-          <img src="img/Mens Shoes Photos/MensPhotoOne.jpg" className="img-fluid rounded" alt="" />
         </MDBCol>
       </MDBRow>
     </MDBContainer>
