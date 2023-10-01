@@ -9,16 +9,16 @@ export const MENSSHOES = [
   },
   {
     id: 1,
-    name: "Jordan Retro 11 Low IE",
-    image: "/images/Mens Shoes Photos/MensPhotoTwo.jpg",
+    name: "Nike Air Max '97",
+    image: "/img/Mens Shoes Photos/MensPhotoTwo.jpg",
     featured: true,
     description: "Men's - white/black",
-    price: "$185.00",
+    price: "$175.00",
   },
   {
     id: 2,
     name: "New Balance 9060",
-    image: "/images/Mens Shoes Photos/MensPhotoThree.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoThree.jpg",
     featured: true,
     description: "Men's - black/grey",
     price: "$150.00",
@@ -26,7 +26,7 @@ export const MENSSHOES = [
   {
     id: 3,
     name: "Adidas Original Campus 00's",
-    image: "/images/Mens Shoes Photos/MensPhotoFour.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoFour.jpg",
     description: "Men's - dark green/off white/white",
     featured: true,
     price: "$110.00",
@@ -34,7 +34,7 @@ export const MENSSHOES = [
   {
     id: 4,
     name: "New Balance 9060",
-    image: "/images/Mens Shoes Photos/MensPhotoFive.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoFive.jpg",
     featured: true,
     description: "Men's - beige/grey/white",
     price: "$150.00",
@@ -42,7 +42,7 @@ export const MENSSHOES = [
   {
     id: 5,
     name: "Jordan Retro 12",
-    image: "/images/Mens Shoes Photos/MensPhotoSix.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoSix.jpg",
     featured: true,
     description: "Men's - black/purple/gold",
     price: "$200.00",
@@ -50,7 +50,7 @@ export const MENSSHOES = [
   {
     id: 6,
     name: "Nike Ja Morant One Fuel",
-    image: "/images/Mens Shoes Photos/MensPhotoSeven.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoSeven.jpg",
     featured: true,
     description: "Men's - black/red/blue",
     price: "$110.00",
@@ -58,7 +58,7 @@ export const MENSSHOES = [
   {
     id: 7,
     name: "Men's Balance 9060",
-    image: "/images/Mens Shoes Photos/MensPhotoEight.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoEight.jpg",
     featured: true,
     description: "Men's - green/white",
     price: "$150.00",
@@ -66,7 +66,7 @@ export const MENSSHOES = [
   {
     id: 8,
     name: "Jordan AJ 1 MID SE V2",
-    image: "/images/Mens Shoes Photos/MensPhotoNine.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoNine.jpg",
     featured: true,
     description: "Men's - orange/red/black",
     price: "$135.00",
@@ -74,7 +74,7 @@ export const MENSSHOES = [
   {
     id: 9,
     name: "Jordan MVP",
-    image: "/images/Mens Shoes Photos/MensPhotoTen.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoTen.jpg",
     featured: true,
     description: "Men's - blue/white/univeristy blue",
     price: "$165.00",
@@ -82,7 +82,7 @@ export const MENSSHOES = [
   {
     id: 10,
     name: "Jordan's Retro 3",
-    image: "/images/Mens Shoes Photos/MensPhotoEleven.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoEleven.jpg",
     featured: true,
     description: "Men's - tan/gold/tan",
     price: "$200.00",
@@ -90,7 +90,7 @@ export const MENSSHOES = [
   {
     id: 11,
     name: "Jordan AJ Mid 1",
-    image: "/images/Mens Shoes Photos/MensPhotoTwelve.jpg",
+    image: "/img/Mens Shoes Photos/MensPhotoTwelve.jpg",
     featured: true,
     description: "Men's - lucky green/white/black",
     price: "$125.00",

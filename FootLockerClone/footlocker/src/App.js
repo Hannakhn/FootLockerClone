@@ -6,6 +6,7 @@ import SecondNavbar from './NavBarSection/secondNavbar';
 import CardNavigation from './Cards Navigation Section/cardNavigation';
 import Footer from './Footer/Footer';
 import BottomPhotoLinks from './Cards Navigation Section/bottomPhotoLinks';
+import SecondPhotoSection from './Collage Second Portion/homepageSecondSection';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <SecondNavbar />
       <PhotoSection />
         <BottomPhotoLinks />
+<SecondPhotoSection />
         <Footer />
     </div>
   );

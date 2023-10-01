@@ -39,6 +39,24 @@ height: auto;
   text-align: center;
 }
 
+/* Second Large Photo on Home Page */
+
+.secondcollagePhoto{
+  max-width: 100%;
+object-fit: fill;
+margin: auto;
+width: 100%;
+height: auto;
+
+
+}
+
+.collagePhotoContainer{
+  position: relative;
+  text-align: center;
+}
+
+
 .homeButtonPhoto {
   position: absolute;
   top: 55%;
@@ -131,7 +149,74 @@ border: white;
 .bottomPhotos{
 display: flex;
 }
+ /* Product Card Section */
 
+.mensShoesHeading{
+     font-family: 'Oswald', sans-serif;
+   font-size: 50px;
+   margin-top: 10px;
+   color:black;
+}
+
+ .MensShoesCards{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+   font-family: 'Oswald', sans-serif;
+   font-size: 20px;
+  padding: 5px 5px;
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: auto;
+   min-height: auto;
+ }
+
+ .womensShoesHeading{
+     font-family: 'Oswald', sans-serif;
+   font-size: 50px;
+   margin-top: 10px;
+   color:black;
+}
+
+ .WomensShoesCards{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+   font-family: 'Oswald', sans-serif;
+   font-size: 20px;
+  padding: 5px 5px;
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: auto;
+   min-height: auto;
+ }
+
+  .kidsShoesHeading{
+     font-family: 'Oswald', sans-serif;
+   font-size: 50px;
+   margin-top: 10px;
+   color:black;
+}
+
+ .KidsShoesCards{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+   font-family: 'Oswald', sans-serif;
+   font-size: 20px;
+  padding: 5px 5px;
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: auto;
+   min-height: auto;
+ }
+
+ h5{
+  font-family: 'Oswald', sans-serif;
+ }
 
 /* Footer */
 .text-center-text-lg-start-text-muted{

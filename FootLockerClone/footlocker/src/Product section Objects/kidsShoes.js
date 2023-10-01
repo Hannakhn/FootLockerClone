@@ -1,8 +1,8 @@
-export const CHILDRENSSHOES = [
+export const KIDSSHOES = [
   {
     id: 0,
     name: "Nike Air Force 1 Low",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoOne.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoOne.jpg",
     featured: true,
     description: "Girl's - black",
     price: "$70.00",
@@ -10,7 +10,7 @@ export const CHILDRENSSHOES = [
   {
     id: 1,
     name: "Puma MB.02",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoTwo.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoTwo.jpg",
     featured: true,
     description: "Boys - white/blue",
     price: "$80.00",
@@ -18,7 +18,7 @@ export const CHILDRENSSHOES = [
   {
     id: 2,
     name: "Jordan AJ 1 Low",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoThree.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoThree.jpg",
     featured: true,
     description: "Boy's - black/white/red",
     price: "$90.00",
@@ -26,7 +26,7 @@ export const CHILDRENSSHOES = [
   {
     id: 3,
     name: "UGG clasic II",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoFour.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoFour.jpg",
     featured: true,
     description: "Girl's - red",
     price: "$60.00",
@@ -34,7 +34,7 @@ export const CHILDRENSSHOES = [
   {
     id: 4,
     name: "Jordan Retro 3",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoFive.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoFive.jpg",
     featured: true,
     description: "Boy's - black/white/red",
     price: "$120.00",
@@ -42,7 +42,7 @@ export const CHILDRENSSHOES = [
   {
     id: 5,
     name: "Nike Air Max 270",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoSix.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoSix.jpg",
     featured: true,
     description: "Boy's - bright spruce/black/white",
     price: "$99.00",
@@ -50,7 +50,7 @@ export const CHILDRENSSHOES = [
   {
     id: 6,
     name: "Nike Ja Morant One",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoSeven.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoSeven.jpg",
     featured: true,
     description: "Boys's - white/blue/yellow",
     price: "$90.00",
@@ -58,7 +58,7 @@ export const CHILDRENSSHOES = [
   {
     id: 7,
     name: "New Balance 574 Core",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoEight.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoEight.jpg",
     featured: true,
     description: "Boy's - black",
     price: "$70.00",
@@ -66,7 +66,7 @@ export const CHILDRENSSHOES = [
   {
     id: 8,
     name: "Crocs Unlined Glitter",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoNine.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoNine.jpg",
     featured: true,
     description: "Girl's - blue/pink",
     price: "$30.00",
@@ -74,7 +74,7 @@ export const CHILDRENSSHOES = [
   {
     id: 9,
     name: "Nike Court Borough Mid 2",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoTen.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoTen.jpg",
     featured: true,
     description: "Girl's - white/emerald rise",
     price: "$75.00",
@@ -82,7 +82,7 @@ export const CHILDRENSSHOES = [
   {
     id: 10,
     name: "Van's Old Skool",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoEleven.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoEleven.jpg",
     featured: true,
     description: "Girl's - white/orange",
     price: "$50.00",
@@ -90,7 +90,7 @@ export const CHILDRENSSHOES = [
   {
     id: 11,
     name: "On Cloud Sky",
-    image: "/img/Child Shoes Photos/ChildShoesPhotoTwelve.jpg",
+    image: "/img/Child Shoes Photos/ChildShoePhotoTwelve.jpg",
     featured: true,
     description: "Girl's - black/blue/white",
     price: "$110.00",
