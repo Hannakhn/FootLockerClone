@@ -10,6 +10,10 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 import { WOMENSSHOES } from "../Product section Objects/womensShoes";
+import NavbarTop from "../NavBarSection/topNavBar";
+import SecondNavbar from "../NavBarSection/secondNavbar";
+import Footer from "../Footer/Footer";
+
 
 class WomensShoeProducts extends Component {
   constructor(props) {
@@ -41,12 +45,17 @@ class WomensShoeProducts extends Component {
     });
 
     return (
+            <section>
+          <NavbarTop />
+          <SecondNavbar />
       <MDBContainer>
         <div>
           <h1 className="womensShoesHeading">Women's Shoes</h1>
         </div>
         <MDBRow>{womensShoesDirectory}</MDBRow>
       </MDBContainer>
+      <Footer />
+      </section>
     );
   }
 }

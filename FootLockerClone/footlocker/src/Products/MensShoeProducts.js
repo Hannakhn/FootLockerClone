@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { MDBRow, MDBCol, MDBCard, MDBContainer, MDBCardText, MDBCardImage, MDBCardTitle, MDBBtn } from "mdb-react-ui-kit";
 import { MENSSHOES } from "../Product section Objects/mensShoes";
 import { bottom } from "@popperjs/core";
+import NavbarTop from "../NavBarSection/topNavBar";
+import SecondNavbar from "../NavBarSection/secondNavbar";
+import Footer from "../Footer/Footer";
 
 
 class MensShoeProducts extends Component {
@@ -31,12 +34,17 @@ class MensShoeProducts extends Component {
     });
 
     return (
-      <MDBContainer>
+      <section>
+          <NavbarTop />
+          <SecondNavbar />
+        <MDBContainer>
           <div>
             <h1 className="mensShoesHeading">Men's Shoes</h1>
           </div>
           <MDBRow>{mensShoesDirectory}</MDBRow>
-      </MDBContainer>
+        </MDBContainer>
+          <Footer />
+      </section>
     );
   }
 }
