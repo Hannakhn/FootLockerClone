@@ -8,6 +8,7 @@ import {
   MDBCardImage,
   MDBCardTitle,
   MDBBtn,
+  MDBModal,
 } from "mdb-react-ui-kit";
 import { WOMENSSHOES } from "../Product section Objects/womensShoes";
 import NavbarTop from "../NavBarSection/topNavBar";
@@ -31,9 +32,9 @@ class WomensShoeProducts extends Component {
           md={3}
           style={{ padding: "10px", paddingBottom: "50px", paddingTop: "10px" }}
         >
-          <MDBCard className="WomensShoesCards">
+          <MDBCard className="ShoesCards">
             <div key={shoes.id}>
-              <MDBCardImage src={shoes.image} />
+              <MDBCardImage src={shoes.image}/>
               <MDBCardTitle tag="h5">{shoes.name}</MDBCardTitle>
               <MDBCardText>{shoes.description}</MDBCardText>
               <MDBCardText>{shoes.price}</MDBCardText>
@@ -50,7 +51,7 @@ class WomensShoeProducts extends Component {
           <SecondNavbar />
       <MDBContainer>
         <div>
-          <h1 className="womensShoesHeading">Women's Shoes</h1>
+          <h1 className="ShoesHeading">Women's Shoes</h1>
         </div>
         <MDBRow>{womensShoesDirectory}</MDBRow>
       </MDBContainer>

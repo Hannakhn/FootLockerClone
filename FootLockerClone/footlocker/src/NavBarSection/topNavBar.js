@@ -23,8 +23,8 @@ export default function NavbarTop() {
     <header>
       <MDBNavbar expand="lg" light>
         <MDBContainer fluid className="entireNavbar">
-          <MDBNavbarBrand href="#">
-            <img src="img/logo.jpg" height="90" alt="" loading="lazy" />
+          <MDBNavbarBrand href="/home">
+            <img src="img/logo.jpg" height="90" alt="" loading="lazy" href='/home'/>
           </MDBNavbarBrand>
           <form className="d-flex input-group w-auto">
             <input

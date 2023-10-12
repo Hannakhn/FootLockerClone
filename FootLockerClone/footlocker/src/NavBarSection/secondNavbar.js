@@ -21,6 +21,7 @@ import {
   MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
+  MDBBadge
 } from "mdb-react-ui-kit";
 
 export default function SecondNavbar() {
@@ -50,16 +51,16 @@ export default function SecondNavbar() {
           <MDBCollapse navbar show={showBasic}>
             <MDBNavbarNav className="secondNav">
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">MEN'S</MDBNavbarLink>
+                <MDBNavbarLink href="/mens">MEN'S</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">WOMEN'S</MDBNavbarLink>
+                <MDBNavbarLink href="/womens">WOMEN'S</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">KIDS'</MDBNavbarLink>
+                <MDBNavbarLink href="kids">KIDS'</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">CLOTHING</MDBNavbarLink>
+                <MDBNavbarLink href="/clothing">CLOTHING</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink href="#">RELEASES</MDBNavbarLink>
@@ -68,97 +69,67 @@ export default function SecondNavbar() {
                 <MDBNavbarLink href="#">BRANDS</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
-            <MDBIcon
-              fas
-              icon="heart"
-              className="topIcons"
-              onClick={toggleShow}
-            />
-            <MDBModal
-              animationDirection="right"
-              show={topRightModal}
-              tabIndex="-1"
-              setShow={setTopRightModal}
-            >
-              <MDBModalDialog position="top-right" side>
-                <MDBModalContent>
-                  <MDBModalHeader className="bg-dark text-white">
-                    <MDBModalTitle>Favorited Items</MDBModalTitle>
-                    <MDBBtn
-                      color="none"
-                      className="btn-close btn-close-white"
-                      onClick={toggleShow}
-                    ></MDBBtn>
-                  </MDBModalHeader>
-                  <MDBModalBody>
-                    <div className="row">
-                      <div className="col-3 text-center">
-                        <i className="fas fa-shopping-cart fa-4x text-dark"></i>
-                      </div>
 
-                      <div className="col-9">
-                        <p>
-                          Do you need more time to make a purchase decision?
-                        </p>
-                        <p>
-                          No pressure, your product will be waiting for you in
-                          the cart.
-                        </p>
-                      </div>
-                    </div>
-                  </MDBModalBody>
-                  <MDBModalFooter>
-                    <MDBBtn outline color="dark" onClick={toggleShow}>
-                      Close
-                    </MDBBtn>
-                  </MDBModalFooter>
-                </MDBModalContent>
-              </MDBModalDialog>  
-            </MDBModal>
+            <div>
+              <MDBIcon
+                fas
+                icon="shopping-cart"
+                className="topIcons"
+                onClick={toggleShow}
+                data-target="#cartModal">
+              </MDBIcon>
+              <MDBBadge
+                color="danger"
+                light
+                pill
+                className="position-absolute translate-middle"
+              >
+                1
+                <span class="visually-hidden"></span>
+              </MDBBadge>
+              <MDBModal
+                animationDirection="right"
+                show={topRightModal}
+                tabIndex="-1"
+                setShow={setTopRightModal}
+              >
+                <MDBModalDialog position="top-middle" side>
+                  <MDBModalContent>
+                    <MDBModalHeader className="bg-dark text-white">
+                      <MDBModalTitle>Cart Items</MDBModalTitle>
+                      <MDBBtn
+                        color="none"
+                        className="btn-close btn-close-white"
+                        onClick={toggleShow}
+                      ></MDBBtn>
+                    </MDBModalHeader>
+                    <MDBModalBody>
+                      <div className="row">
+                        <div className="col-3 text-center">
+                          <i className="fas fa-shopping-cart fa-4x text-dark"></i>
+                        </div>
 
-            <MDBIcon fas icon="shopping-cart" className="topIcons" onClick={toggleShow} />
-            <MDBModal
-              animationDirection="right"
-              show={topRightModal}
-              tabIndex="-1"
-              setShow={setTopRightModal}
-            >
-              <MDBModalDialog position="top-right" side>
-                <MDBModalContent>
-                  <MDBModalHeader className="bg-dark text-white">
-                    <MDBModalTitle>Cart Items</MDBModalTitle>
-                    <MDBBtn
-                      color="none"
-                      className="btn-close btn-close-white"
-                      onClick={toggleShow}
-                    ></MDBBtn>
-                  </MDBModalHeader>
-                  <MDBModalBody>
-                    <div className="row">
-                      <div className="col-3 text-center">
-                        <i className="fas fa-shopping-cart fa-4x text-dark"></i>
+                        <div className="col-9">
+                          <p>
+                            Do you need more time to make a purchase decision?
+                          </p>
+                          <p>
+                            No pressure, your product will be waiting for you in
+                            the cart.
+                          </p>
+                        </div>
                       </div>
-
-                      <div className="col-9">
-                        <p>
-                          Do you need more time to make a purchase decision?
-                        </p>
-                        <p>
-                          No pressure, your product will be waiting for you in
-                          the cart.
-                        </p>
-                      </div>
-                    </div>
-                  </MDBModalBody>
-                  <MDBModalFooter>
-                    <MDBBtn color="dark">Go to the cart</MDBBtn>
-                    <MDBBtn outline color="dark" onClick={toggleShow}>
-                      Close
-                    </MDBBtn>
-                  </MDBModalFooter>
-                </MDBModalContent>
-              </MDBModalDialog>
-            </MDBModal>
+                    </MDBModalBody>
+                    <MDBModalFooter>
+                      <MDBBtn color="dark">Go to the cart</MDBBtn>
+                      <MDBBtn outline color="dark" onClick={toggleShow}>
+                        Close
+                      </MDBBtn>
+                    </MDBModalFooter>
+                  </MDBModalContent>
+                </MDBModalDialog>
+              </MDBModal>
+            </div>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>

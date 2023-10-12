@@ -31,7 +31,7 @@ class KidsShoeProducts extends Component {
           md={3}
           style={{ padding: "10px", paddingBottom: "60px", paddingTop: "10px" }}
         >
-          <MDBCard className="KidsShoesCards">
+          <MDBCard className="ShoesCards">
             <div key={shoes.id}>
               <MDBCardImage src={shoes.image} />
               <MDBCardTitle tag="h5">{shoes.name}</MDBCardTitle>
@@ -50,7 +50,7 @@ class KidsShoeProducts extends Component {
           <SecondNavbar />
       <MDBContainer>
         <div>
-          <h1 className="kidsShoesHeading">Kids Shoes</h1>
+          <h1 className="ShoesHeading">Kids Shoes</h1>
         </div>
         <MDBRow>{kidsShoesDirectory}</MDBRow>
       </MDBContainer>

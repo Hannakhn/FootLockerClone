@@ -20,9 +20,9 @@ class MensShoeProducts extends Component {
     const mensShoesDirectory = this.state.mensShoes.map((shoes) => {
       return (
         <MDBCol md={3} style={{ padding: "10px", paddingBottom:"50px" , paddingTop:"10px"}}>
-          <MDBCard className="MensShoesCards">
+          <MDBCard className="ShoesCards">
             <div key={shoes.id}>
-              <MDBCardImage src={shoes.image} />
+              <MDBCardImage src={shoes.image}/>
               <MDBCardTitle tag="h5">{shoes.name}</MDBCardTitle>
               <MDBCardText>{shoes.description}</MDBCardText>
               <MDBCardText>{shoes.price}</MDBCardText>
@@ -39,7 +39,7 @@ class MensShoeProducts extends Component {
           <SecondNavbar />
         <MDBContainer>
           <div>
-            <h1 className="mensShoesHeading">Men's Shoes</h1>
+            <h1 className="ShoesHeading">Men's Shoes</h1>
           </div>
           <MDBRow>{mensShoesDirectory}</MDBRow>
         </MDBContainer>
