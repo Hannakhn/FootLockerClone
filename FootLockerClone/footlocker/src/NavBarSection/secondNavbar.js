@@ -23,6 +23,8 @@ import {
   MDBModalFooter,
   MDBBadge
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
+import CartMainPage from "../Cart/CartMainPage";
 
 export default function SecondNavbar() {
   const [showBasic, setShowBasic] = useState(false);
@@ -51,22 +53,24 @@ export default function SecondNavbar() {
           <MDBCollapse navbar show={showBasic}>
             <MDBNavbarNav className="secondNav">
               <MDBNavbarItem>
-                <MDBNavbarLink href="/mens">MEN'S</MDBNavbarLink>
+                <MDBNavbarLink href="/mens" className="secondNav">
+                  MEN'S
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="/womens">WOMEN'S</MDBNavbarLink>
+                <MDBNavbarLink href="/womens" className="secondNav">
+                  WOMEN'S
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="kids">KIDS'</MDBNavbarLink>
+                <MDBNavbarLink href="kids" className="secondNav">
+                  KIDS'
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="/clothing">CLOTHING</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href="#">RELEASES</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href="#">BRANDS</MDBNavbarLink>
+                <MDBNavbarLink href="/clothing" className="secondNav">
+                  CLOTHING
+                </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
 
@@ -76,16 +80,16 @@ export default function SecondNavbar() {
                 icon="shopping-cart"
                 className="topIcons"
                 onClick={toggleShow}
-                data-target="#cartModal">
-              </MDBIcon>
+                data-target="#cartModal"
+                color="black"
+              ></MDBIcon>
               <MDBBadge
                 color="danger"
                 light
                 pill
                 className="position-absolute translate-middle"
               >
-                1
-                <span class="visually-hidden"></span>
+                1<span class="visually-hidden"></span>
               </MDBBadge>
               <MDBModal
                 animationDirection="right"
@@ -121,7 +125,8 @@ export default function SecondNavbar() {
                       </div>
                     </MDBModalBody>
                     <MDBModalFooter>
-                      <MDBBtn color="dark">Go to the cart</MDBBtn>
+                      <MDBBtn color="dark">Go to the cart
+                      </MDBBtn>
                       <MDBBtn outline color="dark" onClick={toggleShow}>
                         Close
                       </MDBBtn>

@@ -21,10 +21,16 @@ export default function NavbarTop() {
 
   return (
     <header>
-      <MDBNavbar expand="lg" light>
-        <MDBContainer fluid className="entireNavbar">
+      <MDBNavbar expand="lg" className="entireNavbar">
+        <MDBContainer fluid>
           <MDBNavbarBrand href="/home">
-            <img src="img/logo.jpg" height="90" alt="" loading="lazy" href='/home'/>
+            <img
+              src="img/logo.jpg"
+              height="90"
+              alt=""
+              loading="lazy"
+              href="/home"
+            />
           </MDBNavbarBrand>
           <form className="d-flex input-group w-auto">
             <input
@@ -33,7 +39,7 @@ export default function NavbarTop() {
               placeholder="Search"
               aria-label="Search"
             />
-            <MDBBtn color='dark'>
+            <MDBBtn color="dark">
               <MDBIcon fas icon="search" />
             </MDBBtn>
           </form>
@@ -49,9 +55,9 @@ export default function NavbarTop() {
 
           <MDBCollapse navbar show={showBasic}>
             <MDBNavbarNav className="navBarItems">
-              <MDBNavbarItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle
+              <MDBNavbarItem >
+                <MDBDropdown >
+                  <MDBDropdownToggle 
                     tag="a"
                     className="nav-link center"
                     role="button"
@@ -61,16 +67,20 @@ export default function NavbarTop() {
                     Find a Store
                   </MDBDropdownToggle>
                   <MDBDropdownMenu>
-                    <MDBBtn className="navLocationBtn">Find a Store</MDBBtn>
+                    <MDBBtn>Find a Store</MDBBtn>
                     <MDBDropdownItem link>Set Location</MDBDropdownItem>
                   </MDBDropdownMenu>
                 </MDBDropdown>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Welcome, Sign In</MDBNavbarLink>
+                <MDBNavbarLink href="#" className="navBarItems">
+                  Welcome, Sign In
+                </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href="#">Customer Service</MDBNavbarLink>
+                <MDBNavbarLink href="#" className="navBarItems">
+                  Customer Service
+                </MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

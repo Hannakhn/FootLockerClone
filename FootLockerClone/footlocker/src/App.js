@@ -8,6 +8,7 @@ import MensShoeProducts from './Products/MensShoeProducts';
 import KidsShoeProducts from './Products/KidsShoeProducts';
 import WomensShoeProducts from './Products/WomensShoeProducts';
 import ClothingProducts from './Products/ClothingProducts';
+import CartMainPage from './Cart/CartMainPage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/womens" element={<WomensShoeProducts />} />
           <Route path="/kids" element={<KidsShoeProducts />} />
           <Route path="/clothing" element={<ClothingProducts />} />
+          <Route path="/cart" element={<CartMainPage />} />
         </Routes>
       </Router>
     </div>

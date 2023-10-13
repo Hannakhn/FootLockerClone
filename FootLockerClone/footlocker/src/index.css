@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Bungee&family=Londrina+Solid:wght@300&family=Oswald:wght@400;500&family=Sigmar+One&family=Trochut&family=Viga&display=swap');
 
-body{
-  background-color: rgb(160, 28, 28);
-}
 
 .collagePhoto{
   max-width: 100%;
@@ -67,18 +64,19 @@ color: black !important;
 }
 
 .entireNavbar{
-  background-color: white;
-  color: white !important;
+background-color: rgb(5, 5, 5);
+color:white !important;
 }
 
 .navLocationBtn{
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white !important;
 }
 
 .navBarItems{
-    color:white !important;
+color:white !important;
   font-size: 25px;
 font-family: 'Oswald', sans-serif;
 margin-right: auto;
@@ -87,7 +85,21 @@ margin-left: large;
 justify-content:end;
 }
 
+.nav-link{
+  color:white !important;
+}
 
+.text-uppercase{
+  color: white !important;
+}
+
+.mx-auto{
+  color:white;
+}
+
+.FooterConnects{
+  color: white;
+}
 .dropDownMenu{
   color:white !important;
   background-color: black !important;
@@ -99,7 +111,7 @@ padding-top: 10px;
 }
 
 .secondNav{
-    color:white !important;
+    color:rgb(12, 11, 11) !important;
   font-size: 25px;
 font-family: 'Oswald', sans-serif;
 margin-right: auto;
@@ -133,9 +145,6 @@ padding-right:25px;
 border: white;
 }
 
-.bottomPhotos{
-display: flex;
-}
  /* Product Card Section */
 
 .ShoesHeading, .ClothingHeading{
@@ -149,7 +158,31 @@ display: flex;
 
 }
 
+/* .row-cols{
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: blueviolet;
 
+} */
+
+/* .img-fluid{
+    max-width: 100%;
+  height: auto;
+display: block;
+    margin: auto;
+    width: 100%;
+  justify-content: space-between;
+  
+}
+
+.mb-4-p-3{
+  background-color: aquamarine;
+} */
+ 
+.BottomPhotos{
+width: 100%;
+
+}
 
 .ClothingCards{
     text-align: center;
