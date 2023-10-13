@@ -21,10 +21,13 @@ import {
   MDBModalTitle,
   MDBModalBody,
   MDBModalFooter,
-  MDBBadge
+  MDBBadge,
+  MDBCard,
 } from "mdb-react-ui-kit";
-import { Link } from "react-router-dom";
 import CartMainPage from "../Cart/CartMainPage";
+import CartContext from "../Cart/CartContext";
+import { useContext } from "react";
+
 
 export default function SecondNavbar() {
   const [showBasic, setShowBasic] = useState(false);
@@ -32,6 +35,10 @@ export default function SecondNavbar() {
   const [topRightModal, setTopRightModal] = useState(false);
 
   const toggleShow = () => setTopRightModal(!topRightModal);
+
+  const { items } = useContext(CartContext);
+
+  
 
   return (
     <header>
@@ -89,7 +96,8 @@ export default function SecondNavbar() {
                 pill
                 className="position-absolute translate-middle"
               >
-                1<span class="visually-hidden"></span>
+                {items.length}
+                <span class="visually-hidden"></span>
               </MDBBadge>
               <MDBModal
                 animationDirection="right"
@@ -112,21 +120,19 @@ export default function SecondNavbar() {
                         <div className="col-3 text-center">
                           <i className="fas fa-shopping-cart fa-4x text-dark"></i>
                         </div>
-
                         <div className="col-9">
-                          <p>
-                            Do you need more time to make a purchase decision?
-                          </p>
-                          <p>
-                            No pressure, your product will be waiting for you in
-                            the cart.
-                          </p>
+                          {items.map((item) => (
+                            <div>
+                              <MDBCard>
+                              <h4>{JSON.stringify(item)}</h4>
+                              </MDBCard>
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </MDBModalBody>
                     <MDBModalFooter>
-                      <MDBBtn color="dark">Go to the cart
-                      </MDBBtn>
+                      <MDBBtn color="dark">Go to the cart</MDBBtn>
                       <MDBBtn outline color="dark" onClick={toggleShow}>
                         Close
                       </MDBBtn>

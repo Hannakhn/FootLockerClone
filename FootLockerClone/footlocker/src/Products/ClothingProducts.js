@@ -13,6 +13,8 @@ import { CLOTHING } from "../Product section Objects/clothing";
 import NavbarTop from "../NavBarSection/topNavBar";
 import SecondNavbar from "../NavBarSection/secondNavbar";
 import Footer from "../Footer/Footer";
+import { useContext } from "react";
+import CartContext from "../Cart/CartContext";
 
 class ClothingProducts extends Component {
   constructor(props) {
